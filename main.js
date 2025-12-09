@@ -1,10 +1,13 @@
 let user = {
-  Name: zahra,
+  Name: "zahra",
   Age: 18,
-  Email: zahra18gimal.come,
+  Email: "zahra18gimal.come",
   Text() {
-    ` ${this.Email} وایمیل شما ${this.Age}خوش امدید به سایت . سن شما ${this.Name} `;
+    return ` ${this.Email} وایمیل شما ${this.Age}خوش امدید به سایت . سن شما ${this.Name} `;
   },
 };
-console.log(user.Text);
-document.getElementById("U").innerHTML = user.Text();
+console.log(user.Text());
+
+function Button() {
+  document.getElementById("U").innerHTML = user.Text();
+}
